@@ -1,0 +1,8 @@
+body{
+    background-image: url(3.jpg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+} 
+.h1{
+    border: 10px;
+}
