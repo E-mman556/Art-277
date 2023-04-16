@@ -1,31 +1,219 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Project</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> My personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/286d7465e4.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
-        <div class="main">
-            <div class="logo">
-                <img src="logo.png">
-            </div>
-            <marquee direction="left-only style="color: red; border:black ;"><h1>Isaiah 54:17</h1></marquee>
-            <ul>
-                <li class="active"><a href="home.html">Home</a></li>
-                <li><a href="Gallery.html">Gallery</a></li>
-                <li><a href="contact.html">Contact</a></li>  
-                <li><a href="week.html">Our Weekly Sechdule</a></li> 
+    <div id="header">
+        <div class="container">
+        <nav>
+            <img src="smile.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#profolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
             </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+           <p>WEB/GRAPHIC Designer</p>
+           <h1>Hi, I'm <span>Emmanuel</span> <br /> Vaye From Liberia </h1> 
+
         </div>
-        <div class="title">
-            <h1>HOLY CHAPTER</h1>
+    </div>
+</div>
+<!---about-->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="users.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>My name is Emmanuel S Vaye Jr, i was born unto the union of Mr.Vaye and Sis. Joyce George in saclpea city Nimba County Republic of Liberia
+                    Graduated and serve as president for the St. Patrick Catholic high school 
+                    and presently a sophomore I student at the Starz univerisy majoring Information 
+                    Technology, have the passion to become an web devloper. 
+                </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Exprence')">Exprience</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing webisite interfaces</li>
+                            <li><span>Web Devlopment</span><br>Web app Development</li>
+                            <li><span>Microsoft</span><br>Microsoft Word Operator</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Exprence">
+                        <ul>
+                            <li><span>2021- Current</span><br>Studying Iinformation Technology</li>
+                            <li><span>2019-2021</span><br>Grphic Designer at Where is Money? Business Center</li>
+                            <li><span>2017-2019</span><br>Microsoft office word Trainer at Where is Money? Business Center</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>2019-2020</span><br>Graduate from Where is Money? Computer School</li>
+                            <li><span>2020-2021</span><br>Graduate From St.Patrick Catholic high school</li>
+                            <li><span>2022- Present</span><br>Studying Bachelor in information Technology <br> (Starz University)</li>
+                        </ul>
+                    </div>
+            </div>
         </div>
-        <div class="buttom">
-            <a href="Praise_and_worshi.mp4.mp4" class="btn">WATCH VIDEO</a>
-            <a href="Learn More.html" class="btn">About Us</a>
+    </div>
+</div>
+<!--Services-->
+<div id="service">
+    <div class="container">
+        <h1 class="sub-title">My Services<h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>Design webisite of all kinds for your company or personal use </p>
+                    <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop-simple"></i>
+                <h2>Graphic Design</h2>
+                <p>Do your graphic design and make your work more beautiful</p>
+                    <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>Typist</h2>
+                <p>Type your Document with Accuracy </p>
+                    <a href="#">Learn More</a>
+            </div>
         </div>
-    </header>
+    </div>
+</div>
+<!--profolio-->
+<div class="profolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+               <img src="image 1 (1).png"> 
+               <div class="layer">
+                <h3>Social Media App</h3>
+                <p>The app connects you to the talented people around the world.
+                    Download it form play store.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+               </div>
+            </div>
+            <div class="work">
+                <img src="image 1 (2).png"> 
+                <div class="layer">
+                    <h3>Music  App</h3>
+                    <p>The app connects you to the talented people around the world.
+                        Download it form play store.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                   </div>
+             </div>
+             <div class="work">
+                <img src="image 1 (3).png">
+                <div class="layer">
+                    <h3>Online shopping App</h3>
+                    <p>The app connects you to the talented people around the world.
+                        Download it form play store.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                   </div> 
+             </div>
+        </div>
+        <a href="" class="btn">See More</a>
+    </div>
+</div>
+    </div>
+</div>
+<!--contact-->
+<div id="contact">
+
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+              <h1 class="sub-title">Contact Me</h1>
+              <p><i class="fas fa-paper-plane"></i>Contact@example.com</p> 
+              <p><i class="fas fa-phone-square-alt"></i> 0775312145</p>
+              <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter-square"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+              </div> 
+              <a href="my application.docx" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+               <form name="submit-to-google-sheet">
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="Email" name="Email" placeholder="Your Email" required>
+                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                <button type="submit" class="btn btn2">Submit</button>
+               </form>
+               <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copy Right @ Emmanuel<i class="fas fa-heart"></i> </p>
+    </div>
+</div>
+
+<script>
+var tablinks=document.getElementsByClassName("tab-links");
+var tabcontents=document.getElementsByClassName("tab-contents");
+
+function opentab(tabname){
+    for(tablink of tablinks)
+    tablink.classList.remove("active-link");
+
+for(tabcontent of tabcontents){
+    tabcontent.classList.remove("active-tab");
+}
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+}
+</script>
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzjlGsHrPmi9xdL7Vkrtmke7pla8DNRbUGpzm-tKuvmDyJNa4IaG6WxyTrmDjbEgKPJhQ/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML =  "message sent successfully"
+            setTimeout(function){
+                msg.innerHTML = ""
+                },5000)
+                form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
 </body>
 </html>
